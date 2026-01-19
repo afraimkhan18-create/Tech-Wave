@@ -19,6 +19,9 @@
 .display-flex{
   display: flex;
 }
+.p-text{
+  color: #ffffff;
+}
 /* navbar start */
 .navbar{
   max-width: 1600px;
@@ -30,6 +33,10 @@
   color: white;
 
 }
+
+  .for-mobile{
+    display: none;
+  }
 /* logo */
 .gradient-text{
   background: linear-gradient(360deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
@@ -51,5 +58,64 @@ a{
   cursor: pointer;
   background-image: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
   border: none;
+}
+.second-btn{
+  padding: 10px 20px;
+  border-radius: 10000px;
+  color: #00FF88;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #00FF88;
+}
+/* hero-section start*/
+
+.hero{
+  background-image:url(/assets/microphone.png) ,url(/assets/hero-circle.png),url(/assets/hero-bg.png);
+  background-size:160px,360px, cover;
+  background-position: center,center,center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 760px;
+  position: relative;
+}
+.new{
+  border-radius: 10000px;
+  padding: 12px 24px;
+  background-color: #00FF88;
+  color: black;
+  border: none;
+  position: absolute;
+  top:30%;
+  left: 53%;
+  font-weight: 600;
+  box-shadow: 1px 1px 22px #00FF88;
+}
+.contain{
+  text-align: center;
+  line-height: 3rem;
+  position: absolute;
+  bottom: 5%;
+  left: 33%;
+
+}
+h1{
+  font-weight: 800;
+  font-size: 3.75rem;
+  color: white;
+}
+/* Media Queries */
+@media screen and (max-width:576px){
+  .navbar{
+    padding:20px ;
+  }
+  .pc-menubar,.pc-button{
+    display: none;
+  }
+  .for-mobile{
+        display: block;
+  }
 }
 
