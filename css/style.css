@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
-body{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,7 +71,7 @@ a{
 
 .hero{
   background-image:url(/assets/microphone.png) ,url(/assets/hero-circle.png),url(/assets/hero-bg.png);
-  background-size:160px,350px, cover;
+  background-size:170px,360px, contain;
   background-position: center,center,center;
   background-repeat: no-repeat;
   align-items: center;
@@ -80,7 +80,9 @@ a{
   margin: 0 auto;
   min-height: 100vh;
   position: relative;
+  background-color: #1A0B2E;
 }
+
 .new{
   border-radius: 10000px;
   padding: 12px 24px;
@@ -94,18 +96,66 @@ a{
   box-shadow: 1px 1px 22px #00FF88;
 }
 .contain{
+  max-width: 1600px;
+  margin: 0 auto;
   text-align: center;
   line-height: 2.5rem;
-  position: absolute;
-  bottom: 2%;
+  position: absolute; 
+  bottom:-50px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%); 
+  padding-bottom: 50px;
 
 }
 h1{
   font-weight: 800;
   font-size: 3.75rem;
   color: white;
+}
+
+/* About-section-start */
+.About-Podcast{
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  background-color: #1A0B2E;
+  padding: 50px 200px 120px;
+}
+.About-title{
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+}
+.About-text{
+  color: #ffffff;
+  text-align: center;
+  line-height: 2rem;
+  
+}
+hr{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.About-card {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.About-card{
+  justify-content:space-around;
+  align-items: center;
+}
+.card-item{
+  color: #00FF88;
+  text-align: center;
+}
+.card-text{
+  color: #ffffff;
+}
+
+.card-number{
+  font-size: 2rem;
+  font-weight: 700;
 }
 /* Media Queries */
 @media screen and (max-width:576px){
@@ -129,6 +179,14 @@ h1{
 .contain {
   line-height: normal;
 }
+.About-Podcast{
+  padding: 0;
+
+}
+.About-card{
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+} 
  
 
   
