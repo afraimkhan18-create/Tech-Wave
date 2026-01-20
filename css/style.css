@@ -10,7 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
-* {
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,14 +71,14 @@ a{
 
 .hero{
   background-image:url(/assets/microphone.png) ,url(/assets/hero-circle.png),url(/assets/hero-bg.png);
-  background-size:160px,360px, cover;
+  background-size:160px,350px, cover;
   background-position: center,center,center;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   max-width: 1600px;
   margin: 0 auto;
-  height: 760px;
+  min-height: 100vh;
   position: relative;
 }
 .new{
@@ -88,17 +88,18 @@ a{
   color: black;
   border: none;
   position: absolute;
-  top:30%;
-  left: 53%;
+  top:28%;
+  left: 57%;
   font-weight: 600;
   box-shadow: 1px 1px 22px #00FF88;
 }
 .contain{
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.5rem;
   position: absolute;
-  bottom: 5%;
-  left: 33%;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%);
 
 }
 h1{
@@ -109,13 +110,31 @@ h1{
 /* Media Queries */
 @media screen and (max-width:576px){
   .navbar{
-    padding:20px ;
+  padding:20px ;
   }
   .pc-menubar,.pc-button{
-    display: none;
+  display: none;
   }
   .for-mobile{
-        display: block;
+  display: block;
   }
+  .hero {
+    background-size:100px,250px, cover;
+  
+  }
+  .new{
+  top:33%;
+  left: 60%;
 }
+.contain {
+  line-height: normal;
+}
+ 
+
+  
+}
+
+
+
+
 
