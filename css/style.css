@@ -325,6 +325,20 @@ h4{
   line-height: 3rem;
 }
 
+/* footer-section-start */
+.container{
+max-width: 1600px;
+margin: 0 auto;
+position: relative;
+}
+.footer-image{
+width: 100%;
+position: relative;
+}
+.footer-contain {
+position: absolute;
+}
+
 
 /* Media Queries */
 @media screen and (max-width:576px){
