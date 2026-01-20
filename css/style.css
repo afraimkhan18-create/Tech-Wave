@@ -185,8 +185,6 @@ h3{
   grid-row: span 2;
   display: flex;
   flex-direction: column;
-  /* width: 380px;
-  height: 480px; */
   border-radius: 40px;
   padding:40px;
   background-color: #351165;
@@ -199,8 +197,6 @@ h3{
 .features-2{
   grid-column: span 2;
     flex-direction: column;
-  /* width: 790px;
-  height: 225px; */
   border-radius: 40px;
   padding:40px;
   background-color: #351165;
@@ -213,8 +209,6 @@ h3{
 .features-3{
   grid-column: span 2;
     flex-direction: column;
-  /* width: 790px;
-  height: 225px; */
   border-radius: 40px;
   padding:40px;
   background-color: #351165;
@@ -227,8 +221,6 @@ h3{
 .features-4{
   grid-column: span 2;
     flex-direction: column;
-  /* width: 790px;
-  height: 273px; */
   border-radius: 40px;
   padding:40px;
   background-color: #351165;
@@ -241,8 +233,6 @@ h3{
 .features-5{
   grid-column: span 1;
     flex-direction: column;
-  /* width: 380px;
-  height: 273px; */
   border-radius: 40px;
   padding:40px;
   background-color: #351165;
