@@ -284,6 +284,13 @@ text-align: center;
   font-weight: 400;
 }
 
+/* host */
+.host{
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: #250D44;
+}
 
 /* Media Queries */
 @media screen and (max-width:576px){
