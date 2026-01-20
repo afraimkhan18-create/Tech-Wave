@@ -111,13 +111,13 @@ h1{
   font-weight: 800;
   font-size: 3.75rem;
   color: white;
+  text-align: center;
 }
 
 /* About-section-start */
 .About-Podcast{
   max-width: 1600px;
   margin: 0 auto;
-  margin-bottom: 200px;
   background-color: #1A0B2E;
   padding: 50px 200px 120px;
 }
@@ -157,6 +157,102 @@ hr{
   font-size: 2rem;
   font-weight: 700;
 }
+/* TechWave start */
+
+.TechWave-container{
+    max-width: 1600px;
+  margin: 0 auto;
+  background-color: #230E3D;
+  padding: 120px 200px;
+}
+
+.TechWave{
+  display: grid;
+  gap: 20px;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+h3{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  line-height: 3rem;
+}
+.features-1{
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  /* width: 380px;
+  height: 480px; */
+  border-radius: 40px;
+  padding:40px;
+  background-color: #351165;
+  text-align: left;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: baseline;
+  gap: 20px;
+}
+.features-2{
+  grid-column: span 2;
+    flex-direction: column;
+  /* width: 790px;
+  height: 225px; */
+  border-radius: 40px;
+  padding:40px;
+  background-color: #351165;
+  text-align: left;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: baseline;
+  gap: 20px;
+}
+.features-3{
+  grid-column: span 2;
+    flex-direction: column;
+  /* width: 790px;
+  height: 225px; */
+  border-radius: 40px;
+  padding:40px;
+  background-color: #351165;
+  text-align: left;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: baseline;
+  gap: 20px;
+}
+.features-4{
+  grid-column: span 2;
+    flex-direction: column;
+  /* width: 790px;
+  height: 273px; */
+  border-radius: 40px;
+  padding:40px;
+  background-color: #351165;
+  text-align: left;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: baseline;
+  gap: 20px;
+}
+.features-5{
+  grid-column: span 1;
+    flex-direction: column;
+  /* width: 380px;
+  height: 273px; */
+  border-radius: 40px;
+  padding:40px;
+  background-color: #351165;
+  text-align: left;
+  align-items: baseline;
+  justify-content: center;
+  justify-items: baseline;
+  gap: 20px;
+}
+
+
 /* Media Queries */
 @media screen and (max-width:576px){
   .navbar{
@@ -186,7 +282,15 @@ hr{
 .About-card{
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
-} 
+}
+.TechWave-container{
+padding: 20px;
+
+}
+.TechWave{
+grid-template-columns: 1fr; 
+
+}
  
 
   
